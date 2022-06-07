@@ -6,3 +6,13 @@
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
 }
+
+ :root {
+    /*primary*/
+    --dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    /*Neutral*/
+    --D-grayish-magenta: hsl(303, 10%, 53%);
+    --L-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}

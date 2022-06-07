@@ -17,7 +17,7 @@ Soft Pink: hsl(333, 80%, 67%)
 ### Neutral
 
 Dark Grayish Magenta: hsl(303, 10%, 53%)
-Light Grayish Magenta: hsl(300, 24%, 96%)
+Light Grayish Magenta:  
 White: hsl(0, 0%, 100%)
 
 ## Typography
