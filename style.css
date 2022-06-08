@@ -18,6 +18,11 @@
     --font-size: 15px;
 }
 
+::selection {
+    background: var(--D-grayish-magenta);
+    color: var(--white);
+}
+
 .container {
     width: 100%;
     height: 100vh;
@@ -40,12 +45,13 @@
 .content p {
     font-size: var(--font-size);
     color: var(--D-grayish-magenta);
+    margin: 1rem 0;
 }
 
 .informations {
     display: flex;
-    justify-content: space-around;
-    margin: 3rem;
+    justify-content: space-between;
+    margin: 3rem 0;
 }
 
 .cards {
@@ -55,21 +61,26 @@
 
 .card {
     height: 200px;
-    width: 300px;
+    width: 330px;
     border-radius: 0.5rem;
     background: var(--dark-magenta);
     padding: 0.5rem;
-}
-
-.card img {
-    width: 64px;
-    border-radius: 50%;
+    position: relative;
 }
 
 .card .card-content {
-    display: flex;
-    flex-direction: column;
-    margin: 0.1rem;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    margin: 0.5rem;
+}
+
+.card img {
+    position: absolute;
+    width: 64px;
+    border-radius: 50%;
+    top: 1.5rem;
+    right: 3rem;
 }
 
 .card h3 {
@@ -78,17 +89,11 @@
 
 .card span {
     color: var(--soft-pink);
-    margin: 0.5rem;
 }
 
 .card p {
+    margin: 1rem 0;
     color: var(--white);
-}
-
-.starts {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10rem;
 }
 
 .card.two {
@@ -100,7 +105,7 @@
 }
 
 .star {
-    background: var(--D-grayish-magenta);
+    background: var(--L-grayish-magenta);
     color: var(--dark-magenta);
     width: 20rem;
     height: 3rem;
@@ -109,6 +114,7 @@
     justify-content: flex-end;
     align-items: center;
     padding: 1rem;
+    margin: 1rem;
 }
 
 .star img {
@@ -117,12 +123,4 @@
 
 .star h1 {
     font-size: var(--font-size);
-}
-
-.star.two {
-    margin: 1rem 2rem;
-}
-
-.star.three {
-    margin: 0 3rem;
 }
