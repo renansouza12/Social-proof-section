@@ -18,8 +18,16 @@
     --font-size: 15px;
 }
 
-.container {
-    padding: 2rem;
+.container {}
+
+.container .top {
+    position: absolute;
+    top: 0;
+}
+
+.container .bot {
+    position: absolute;
+    bottom: 0;
 }
 
 .content h1 {
@@ -30,4 +38,59 @@
 .content p {
     font-size: var(--font-size);
     color: var(--D-grayish-magenta);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 0.2rem;
+    height: 200px;
+    width: 300px;
+    border-radius: 0.5rem;
+    background: var(--dark-magenta);
+    padding: 0.5rem;
+}
+
+.card img {
+    width: 64px;
+    border-radius: 50%;
+}
+
+.card .card-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0.1rem;
+}
+
+.card h3 {
+    color: var(--white);
+}
+
+.card span {
+    color: var(--soft-pink);
+    margin: 0.5rem;
+}
+
+.card p {
+    color: var(--white);
+}
+
+.starts {
+    display: flex;
+}
+
+.star {
+    margin: 1rem;
+    background: var(--D-grayish-magenta);
+    color: var(--dark-magenta);
+    width: 20rem;
+    height: 3rem;
+    border-radius: 0.1rem;
+}
+
+.star h1 {
+    font-size: var(--font-size);
 }
