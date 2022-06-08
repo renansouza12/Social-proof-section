@@ -26,8 +26,6 @@
     justify-content: center;
 }
 
-.main-content {}
-
 .content {
     display: flex;
     justify-content: space-around;
@@ -47,12 +45,12 @@
 .informations {
     display: flex;
     justify-content: space-around;
+    margin: 3rem;
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem;
 }
 
 .card {
@@ -90,6 +88,7 @@
 .starts {
     display: flex;
     flex-direction: column;
+    margin-left: 10rem;
 }
 
 .card.two {
@@ -101,14 +100,29 @@
 }
 
 .star {
-    margin: 0.5rem;
     background: var(--D-grayish-magenta);
     color: var(--dark-magenta);
     width: 20rem;
     height: 3rem;
     border-radius: 0.1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem;
+}
+
+.star img {
+    padding: 0 0.9rem 0 0;
 }
 
 .star h1 {
     font-size: var(--font-size);
+}
+
+.star.two {
+    margin: 1rem 2rem;
+}
+
+.star.three {
+    margin: 0 3rem;
 }
