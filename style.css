@@ -124,3 +124,74 @@
 .star h1 {
     font-size: var(--font-size);
 }
+
+@media screen and (max-width:1060px) {
+    .main-content {
+        padding: 2rem;
+    }
+    .card {
+        height: 200px;
+        width: 300px;
+    }
+    .card.two {
+        margin: 0.5 1rem;
+    }
+    .card.three {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .card {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width:965px) {
+    .cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 290px;
+        margin: 0.5rem 0;
+    }
+}
+
+@media screen and (max-width:725px) {
+    .informations {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .content h1 {
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .star {
+        margin: 0.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30rem;
+        padding: 1rem 0;
+    }
+    .card {
+        height: 200px;
+        width: 250px;
+    }
+    .card h3 {
+        font-size: 17px;
+    }
+    .card span {
+        font-size: 15px;
+    }
+    .card p {
+        font-size: 15px;
+    }
+}
