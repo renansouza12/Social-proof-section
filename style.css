@@ -125,6 +125,14 @@
     font-size: var(--font-size);
 }
 
+.star.two {
+    margin: 1rem 2rem;
+}
+
+.star.three {
+    margin: 0 3rem;
+}
+
 @media screen and (max-width:1060px) {
     .main-content {
         padding: 2rem;
@@ -133,8 +141,11 @@
         height: 200px;
         width: 300px;
     }
+    .card.one {
+        margin: 0;
+    }
     .card.two {
-        margin: 0.5 1rem;
+        margin: 0.2rem 1rem;
     }
     .card.three {
         margin: 0;
@@ -167,18 +178,40 @@
         align-items: center;
         margin: 0;
     }
+    .main-content {
+        height: 100vh;
+    }
     .content h1 {
-        font-size: 2rem;
+        text-align: center;
+    }
+    .content p {
+        padding: 1rem;
+        text-align: center;
+    }
+    .content h1 {
+        font-size: 3rem;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+    .stars {
+        margin: 1rem 0;
+    }
     .star {
-        margin: 0.3rem;
+        margin: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 30rem;
+        width: 20rem;
+        padding: 1rem 0;
+    }
+    .star.two {
+        margin: 1rem 0;
+    }
+    .star.three {
+        margin: 0;
+    }
+    .cards {
         padding: 1rem 0;
     }
     .card {
@@ -195,3 +228,5 @@
         font-size: 15px;
     }
 }
+
+@media screen and (max-width: 375px) {}
